@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="border">
+      <input
+        type="text"
+        id="mySearch"
+        onkeyup="pop()"
+        placeholder="Search entity types and templates"
+        title="Type in a category"
+      />
+
+      <div class="vl"></div>
+      <div class="border-box1">
+        <!-- start panel 2 -->
+        <div id="panel2" class="panel2">
+          <div onclick="show()" id="panel2" class="close">
+            <img class="closee" src="image/close.png" alt="close" />
+          </div>
+
+          <input
+            id="fname"
+            class="inputtxt"
+            type="text"
+            placeholder="Firet Name"
+            pattern="[A-Z]"
+          />
+          
+          <input
+            id="lname"
+            class="inputtxt"
+            type="text"
+            placeholder="Last Name"
+          />
+          <div class="stylebutton">
+            <button type="button" onclick="create()" class="buttonsc">Submit</button>
+            <button onclick="clearinput()" class="buttonsc">Clear Input</button>
+            <p class="p1" id="p1"></p>
+          </div>
+          <div class="name-family">
+            <p class="stylefl">Name &</p>
+            
+            <p class="stylefl">Family</p>
+          </div>
+          <table id="style">
+            <tr>
+              <td>ali</td>
+              <td>moradi</td>
+            </tr>
+            <tr>
+              <td>sara</td>
+              <td>ahmadi</td>
+            </tr>
+          </table>
+        </div>
+        <!-- end panel 2 -->
+        <ul>
+          <p class="st">Your industry</p>
+          <li onclick="user1()" class="user">
+            <div class="border-icon">
+              <img src="image/user (1).png" alt="usr" />
+            </div>
+            <div class="dc">
+              Dynamic/moveing entity
+              <h4 onclick="">Users</h4>
+            </div>
+          </li>
+          <div id="panel1" class="panel">
+            <div class="dc">
+              Dynamic/moveing entity
+              <h3>Create an account !</h3>
+            </div>
+            <p class="dcc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+              accusantium deleniti repellendus, quasi debitis ratione, totam
+              aliquid eligendi ducimus nemo, praesentium saepe unde dolorem
+              libero minus fuga. Magni, vero quod!
+            </p>
+            <button onclick=" myFunction()" class="Createacc">
+              + Create Entity
+            </button>
+            <!-- <div class="Createacc">+ Create Entity</div> -->
+          </div>
+
+          <li class="user">
+            <div class="border-icon">
+              <img src="image/bike (1).png" alt="bike" />
+            </div>
+            <div class="dc">
+              Dynamic/moveing entity
+              <h4>Delivery EXecutives</h4>
+            </div>
+          </li>
+          <li class="user">
+            <div class="border-icon">
+              <img src="image/cafe (1).png" alt="Restourents" />
+            </div>
+            <div class="dc">
+              Static Entity
+              <h4>Restourents</h4>
+            </div>
+          </li>
+          <li class="user">
+            <div class="border-icon">
+              <img src="image/flag (1).png" alt="Stations" />
+            </div>
+            <div class="dc">
+              Static Entity
+              <h4>Stations/Hubs</h4>
+            </div>
+          </li>
+          <p class="st">Others</p>
+          <li class="user">
+            <div class="border-icon">
+              <img src="image/support (2).png" alt="support" />
+            </div>
+            <div class="dc">
+              Dynamic/moveing entity
+              <h4>Supports Reps</h4>
+            </div>
+          </li>
+          <li class="user">
+            <div class="border-icon">
+              <img src="image/bank (1).png" alt="Buildings" />
+            </div>
+            <div class="dc">
+              Static Entity
+              <h4>Buildings</h4>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
